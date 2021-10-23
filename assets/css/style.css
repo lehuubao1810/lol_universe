@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.background {
+    /* background: url(https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt83e9e8358aef6234/613ff374aa183b2c785b6c01/the-dissonant-verses-splash.jpeg) no-repeat center center fixed; */
+    background-color: #191c20;
+    height: 100vh;
+    width: 100vw;
+}
+.header__logo {
+    position: absolute;
+    z-index: 100;
+}
+
+.logo {
+    width: 160px;
+    height: 160px;
+    background: url(https://cdn.rgpub.io/public/live/riotbar/3.1.10/f1c782f5006f80285afe.png) 0 -2400px no-repeat;
+    transition: background-position .25s steps(15, end);
+    transform: scale(0.33);
+    position: absolute;
+    top: -41px;
+    left: -23px;
+}
+.logo:hover {
+    background-position: 0 0;
+    cursor: pointer;
+}
+.header__logo .line {
+    width: 2px;
+    height: 30px;
+    background-color:#3c3c3c;
+    position: absolute;
+    top: 24px;
+    left: 111px;
+}
+.logo-lol {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1px;
+    left: 113px;
+    z-index: 100;
+}
+.logo-lol img{
+    width: 30px;
+    height: 32px;
+    margin-left : 18px;
+}
+
+.logo-lol a {
+    color: white;
+    font-family: "Mulish";
+}
+.vutru {
+    width:40px;
+    height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 16px;
+    vertical-align: baseline;
+}
+.icon-more {
+    color:#7e7e7e;
+    position: absolute;
+    top: 34px;
+    left: 88px;
+    font-size: 14px;
+}
+.icon-more2 {
+    color:#7e7e7e;
+    font-size: 14px;
+}
+.icon-more:hover {
+    color:#fff;
+    cursor: pointer;
+}
+.header__menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header__menu-item {
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+.header__menu-item:hover i {
+    color: #fff;
+}
+.header__menu-item a {
+    color:white;
+    font-weight: bold;
+    font-family: "Mulish";
+    font-size: 12px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    border-bottom: #1a1a1a solid 1px;
+    z-index: 100;
+    
+}
+
+.sub-function {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 400px;
+}
+.sub-function a {
+    font-family: "Mulish";
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #212121;  
+}
+.language i {
+    color: white;
+    font-size: 14px;
+}
+.language:hover {
+    cursor: pointer;
+}
+.sign-in {
+    margin: 0 10px;
+}
+.play-now {
+    display: inline-block;
+    width: 129px;
+    height: 47px;
+    text-align:center;
+    padding: 15px 0;
+    margin: 0 15px;
+}
+.play-now:hover {
+    background-color: rgb(11,196,226);
+    border-radius: 2px;
+}
+
+/* NEXT-PREVIEW */
+.slider {
+    width: 100%;
+}
+.btn-slider {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+}
+circle {
+    display: block;
+    background: #191c20;
+    border-radius: 50%;
+}
+.next {
+    position: relative;
+    right: 0px;
+}
+.previous {
+    position: relative;
+    left: 200px;
+}
+
+.first-circle {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    z-index: 10;
+    border: #b09250 solid 1.8px;
+    transition: all .25s ease-in-out;
+}
+.btn-slider:hover {
+    cursor: pointer;
+}
+.btn-slider:hover > .first-circle {
+    transform: scale(1.1);
+}
+.second-circle {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    z-index: 11;
+    border: #b09250 solid 2.5px;
+}
+.icon {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 12;
+    color: #b09250;
+}
+
+/* moi nhat */
+.new {
+    width: 100%;
+    height: 1000px;
+    background: url(https://universe.leagueoflegends.com/images/latestBg_Wallpaper.png) no-repeat center center fixed;
+}
+/* .line {
+    padding-left: 70px;
+    vertical-align: middle;
+    width: 500px;
+    height: 2px;
+    color:#b09250;
+} */
