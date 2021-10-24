@@ -11,10 +11,13 @@ a {
 
 .background {
     /* background: url(https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt83e9e8358aef6234/613ff374aa183b2c785b6c01/the-dissonant-verses-splash.jpeg) no-repeat center center fixed; */
-    background-color: #191c20;
+    background-color: #111111;
     height: 100vh;
     width: 100vw;
 }
+
+/* HEADER */
+
 .header__logo {
     position: absolute;
     z-index: 100;
@@ -32,6 +35,17 @@ a {
 }
 .logo:hover {
     background-position: 0 0;
+    cursor: pointer;
+}
+.icon-more {
+    color:#7e7e7e;
+    position: absolute;
+    top: 34px;
+    left: 88px;
+    font-size: 14px;
+}
+.header__logo:hover .icon-more {
+    color:#fff;
     cursor: pointer;
 }
 .header__logo .line {
@@ -62,30 +76,23 @@ a {
     color: white;
     font-family: "Mulish";
 }
-.vutru {
+.title {
     width:40px;
     height: 80px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    padding-top: 16px;
+    padding-top: 8px;
+    padding-left: 8px;
     vertical-align: baseline;
+    line-height: 1.8;
 }
-.icon-more {
-    color:#7e7e7e;
-    position: absolute;
-    top: 34px;
-    left: 88px;
-    font-size: 14px;
-}
+
 .icon-more2 {
     color:#7e7e7e;
     font-size: 14px;
 }
-.icon-more:hover {
-    color:#fff;
-    cursor: pointer;
-}
+
 .header__menu-list {
     display: flex;
     flex-direction: row;
@@ -93,7 +100,7 @@ a {
     align-items: center;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 476px;
     height: 100%;
     width: 100%;
 }
@@ -102,15 +109,28 @@ a {
     display: inline-block;
     margin-right: 20px;
     text-transform: uppercase;
+    line-height: 80px;
+    padding: 0 12px;
+    margin : 0 10px;
 }
 .header__menu-item:hover i {
     color: #fff;
+}
+.header__menu-item:hover {
+    box-shadow: rgb(11,196,226) 0 -2px 0 inset;
+    cursor: pointer;
 }
 .header__menu-item a {
     color:white;
     font-weight: bold;
     font-family: "Mulish";
     font-size: 12px;
+}
+.sub_nav_univ {
+    display: none;
+}
+.sub_nav_more {
+    display: none;
 }
 
 .header {
@@ -119,8 +139,8 @@ a {
     left: 0;
     width: 100%;
     height: 80px;
-    background-color: black;
-    border-bottom: #1a1a1a solid 1px;
+    background-color: #111111;
+    border-bottom: #1a1a1a solid 2px;
     z-index: 100;
     
 }
@@ -130,8 +150,8 @@ a {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20px;
-    left: 400px;
+    top: 17px;
+    right: 12px;
 }
 .sub-function a {
     font-family: "Mulish";
@@ -146,7 +166,8 @@ a {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: #212121;  
+    background: #212121; 
+    margin-right: 6px; 
 }
 .language i {
     color: white;
@@ -188,12 +209,16 @@ circle {
     border-radius: 50%;
 }
 .next {
-    position: relative;
-    right: 0px;
+    position: absolute;
+    top: 241px;
+    right: 66px;
+    width: 50px;
 }
 .previous {
-    position: relative;
-    left: 200px;
+    position: absolute;
+    top: 241px;
+    left: 66px;
+    width: 50px;
 }
 
 .first-circle {
@@ -228,8 +253,13 @@ circle {
 /* moi nhat */
 .new {
     width: 100%;
-    height: 1000px;
-    background: url(https://universe.leagueoflegends.com/images/latestBg_Wallpaper.png) no-repeat center center fixed;
+    height: 800px;
+    background: url(https://universe.leagueoflegends.com/images/latestBg_Wallpaper.png) center /cover no-repeat;
+}
+.represent {
+    width: 100%;
+    height: 800px;
+    background: url(https://universe.leagueoflegends.com/images/trendingBackground_Wallpaper.png) center /cover no-repeat;
 }
 /* .line {
     padding-left: 70px;
